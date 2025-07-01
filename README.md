@@ -7,6 +7,7 @@
 
 ## WSL 에서 USB to CAN 연결
 **powershell**
+
 ``` powershell
 usbipd list //현재 연결된 장치 확인
 ```
@@ -18,10 +19,12 @@ usbipd bind --busid [wsl에 연결할 장치의 BUSID ex)1-3 ] //성공시 STATE
 usbipd attach --wsl --busid [연결할 장치의 BUSID]
 ```
 
----
 ## can-utils (https://github.com/linux-can/can-utils)
 **LINUX**
 ``` bash
+sudo apt-get update
+sudo apt-get install can-utils
+
 sudo ifconfig can0 down
 sudo ip link set can0 type can bitrate 1000000 //비트레이트는 사용할 CAN BUS에 맞게 설정
 sudo ifconfig can0 up
