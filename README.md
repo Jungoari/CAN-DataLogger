@@ -15,7 +15,7 @@
 
 - Linux 기반의 **SocketCAN 인터페이스**를 사용하여 CAN 통신을 처리  
 - `can-utils`는 SocketCAN 위에서 CAN 데이터를 수동으로 송수신할 수 있는 CLI 도구  
-- Python의 `py-can` 라이브러리는 SocketCAN을 통해 CAN 데이터를 실시간으로 송수신 및 처리
+- `python-can` 라이브러리는 SocketCAN을 통해 CAN 데이터를 실시간으로 송수신 및 처리
 
 ## Getting Started
 만약 Rasberry Pi가 아닌 WSL에서 실행 시 아래와 같이 세팅
